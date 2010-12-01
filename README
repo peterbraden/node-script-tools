@@ -1,0 +1,23 @@
+===Node Script Tools===
+<peterbraden@peterbraden.co.uk>
+
+A few functions to aid writing commandline scripts with node.js
+
+== Install == 
+$> npm install scriptTools
+
+== Use ==
+var st = require('scriptTools');
+
+
+
+st.optParse()
+// returns [options, args]
+// ie. 
+// $>node myscript.js -a -b=hello foo bar
+// returns [{'-a':true, '-b':'hello'}, [foo, bar]]
+
+st.loadConfig(filename, success)
+// loads JSON configs from ~/filename and calls success function with them.
+
+
