@@ -1,0 +1,8 @@
+{
+	"name" : "scriptTools",
+	"description" : "General utilities for node.js scripts, such as command line argument parsing and config loading",
+	"version" :" 0.0.1",
+	"author" : "Peter Braden <peterbraden@peterbraden.co.uk>",
+	"engines" : ["node >=0.2.5"],
+	"main" : "./scriptTools"
+}	
