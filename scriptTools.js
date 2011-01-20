@@ -9,7 +9,7 @@ var fs = require('fs')
 var loadConfig = function(filename, success){
   fs.readFile(path.join(process.env.HOME, filename), 'utf8', function(err, data){
     if(err){
-      console.err(err);
+      console.log(err);
       success({});
       return;
     }
