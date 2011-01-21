@@ -6,8 +6,8 @@ var fs = require('fs')
 /*
 * Load configs from json file
 */
-var loadConfig = function(filename, success){
-  fs.readFile(path.join(process.env.HOME, filename), 'utf8', function(err, data){
+var loadConfig = function(filename, success, local){
+  fs.readFile(path.join(local?process.env.HOME:'', filename), 'utf8', function(err, data){
     if(err){
       console.log(err);
       success({});
